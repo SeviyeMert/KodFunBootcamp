@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözde Element</title>
+    <style>
+        html {
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+        }
+        p::first-letter {
+            font-size: 3em;
+            float: left;
+            line-height: 0.73;
+            font-weight: bold;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+
+        p::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        main {
+            max-width: 900px;
+            /*      y   x   */
+            margin: 0 auto;
+            padding: 36px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+            background: #fffef0;
+        }
+
+        @media (max-width: 750px){
+            main {
+                margin: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- p*4>lorem -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatibus itaque et quibusdam illo neque officiis beatae tenetur eveniet nihil quae nam placeat, fugit, ducimus facilis eaque excepturi veniam vero!</p>
+        <p>Recusandae quos atque expedita. Doloremque, non ea recusandae ratione delectus amet. Non, reiciendis nemo. Architecto, quod maxime unde dolores debitis iusto hic consequuntur distinctio dolor quaerat nulla soluta? Repellendus, ea.</p>
+        <p>Fuga maiores animi ab ducimus quisquam a suscipit excepturi, non adipisci expedita quasi sed eligendi sunt quidem placeat vel quis. Aliquam, quo voluptatum neque quis maxime ullam debitis non rem.</p>
+        <p>Iure qui illo aliquid quae iste minus, quam tenetur dolores quo minima deleniti quidem quos at hic enim voluptatem ratione accusamus ex veritatis. Vitae earum magni eos voluptatibus. Reiciendis, id.</p>
+    </main>
+</body>
+</html>
