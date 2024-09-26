@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -17,15 +17,22 @@
         box-sizing: border-box;
       }
       body {
-        font-family: "Lato", sans-serif;
+        width: 85%;
+        font-family: "Raleway", sans-serif;
         margin: 0;
         background-color: #f1f1f1;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      img {
+        width: 100%;
       }
 
       mark {
         background-color: black;
         color: white;
-        padding: .2rem .5rem;
+        padding: 0.2rem 0.5rem;
       }
 
       header {
@@ -42,26 +49,52 @@
       main {
         display: flex;
         max-width: 1200px;
-        margin: 0 auto;
       }
 
       .col1 {
         /* SİL */
         flex: 2;
-        margin: 0 1rem;
       }
 
       .col2 {
         /* SİL */
         flex: 1;
-        margin: 0 1rem;
       }
 
       .box {
         background-color: white;
-        margin-bottom: 2rem;
         min-height: 150px; /* SİL */
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 16px;
+      }
+
+      .box h2,
+      h3,
+      h5,
+      p {
+        padding: 1rem;
+      }
+
+      .readmore {
+        display: inline-block;
+        font-size: 0.95rem;
+        height: 3.2rem;
+        width: 9.5rem;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #61616154;
+        margin: 0 0 1rem 1rem;
+      }
+
+      .readmore:hover {
+        background-color: #8a848465;
+      }
+
+      .comments-number {
+        color: white;
+        background-color: black;
       }
 
       footer {
@@ -85,11 +118,45 @@
     </header>
     <main>
       <div class="col1">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+          <img src="./woods.jpg" alt="nature" />
+          <div>
+            <h2>TITLE HEADING</h2>
+            <p>Title description, April 7, 2014</p>
+          </div>
+          <p>
+            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl.
+            Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna
+            enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+            congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed
+            vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.
+          </p>
+          <button class="readmore">READ MORE ≫</button>
+          <p class="commments">
+            <span>Comments</span>
+            <span class="comments-number">0</span>
+          </p>
+        </div>
+        <div class="box">
+          <img src="./bridge.jpg" alt="blog entry photo" />
+          <div>
+            <h2>BLOG ENTRY</h2>
+            <h5>Title description, April 2, 2014</h5>
+          </div>
+          <button class="readmore">READ MORE ≫</button>
+        </div>
       </div>
       <div class="col2">
-        <div class="box"></div>
+        <div class="box">
+          <img src="./avatar_g.jpg" alt="my photos" />
+          <h3>My Name</h3>
+          <p>
+            Just me, myself and I, exploring the universe of uknownment. I have
+            a heart of love and a interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you.
+          </p>
+        </div>
         <div class="box"></div>
         <div class="box"></div>
       </div>
